@@ -90,15 +90,6 @@ body {
   width: 100%;
 }
 
-.validate-message {
-  color: var(--secondary-color) !important;
-  display: none;
-}
-
-.validate-message::after {
-  content: "!";
-}
-
 /* Hero Section */
 .hero {
   background: var(--gradient),
