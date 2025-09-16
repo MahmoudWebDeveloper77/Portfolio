@@ -71,7 +71,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     } catch (err) {
       validateMessage.style.display = "block";
-      validateMessage.style.color = "red";
       validateMessage.textContent = "Something went wrong. Please try again ";
       console.log("error submitting form", err);
     }
