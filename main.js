@@ -7,12 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const phoneField = document.getElementById("phone");
   const emailField = document.getElementById("email");
   const validateMessage = document.querySelector(".validate-message");
-  const green = getComputedStyle(document.documentElement).getPropertyValue(
-    "--green"
-  );
-  const red = getComputedStyle(document.documentElement).getPropertyValue(
-    "--red"
-  );
 
   form.addEventListener("submit", async (event) => {
     event.preventDefault(); // stop default submit
