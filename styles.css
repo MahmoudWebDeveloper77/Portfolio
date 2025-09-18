@@ -193,12 +193,16 @@ body {
 }
 
 /* Projects Section */
+
 .project-card {
   border: none;
   border-radius: 10px;
   overflow: hidden;
   transition: all 0.3s ease;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card:hover {
@@ -215,6 +219,7 @@ body {
   height: 200px;
   object-fit: cover;
   transition: all 0.5s ease;
+  width: 100%;
 }
 
 .project-card:hover img {
@@ -239,6 +244,23 @@ body {
   opacity: 1;
 }
 
+.project-card .card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 24px;
+}
+
+.project-card .card-title {
+  margin-bottom: 12px;
+}
+
+.project-card .card-text {
+  margin-bottom: 18px;
+}
+
 .project-technologies {
   text-align: center;
 }
@@ -255,7 +277,8 @@ body {
 }
 
 .project-links {
-  margin-top: 20px;
+  margin-top: auto;
+  width: 100%;
 }
 
 .project-links .btn {
