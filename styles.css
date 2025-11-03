@@ -143,7 +143,7 @@ body {
 
 .scroll-indicator {
   position: absolute;
-  bottom: 30px;
+  bottom: 60px;
   left: 50%;
   transform: translateX(-50%);
   animation: bounce 2s infinite;
@@ -193,7 +193,6 @@ body {
 }
 
 /* Projects Section */
-
 .project-card {
   border: none;
   border-radius: 10px;
@@ -282,7 +281,6 @@ body {
 }
 
 .project-links .btn {
-  margin-right: 10px;
   border-radius: 20px;
   padding: 5px 15px;
 }
@@ -328,7 +326,6 @@ body {
 }
 
 /*reviews section*/
-
 #reviews {
   position: relative;
   background: radial-gradient(
@@ -526,6 +523,7 @@ body {
   transform: translateY(-3px);
 }
 
+/* Responsive Styles */
 @media (max-width: 992px) {
   .hero h1 {
     font-size: 2.8rem;
@@ -570,6 +568,10 @@ body {
 
   .project-card {
     margin-bottom: 30px;
+  }
+
+  .scroll-indicator {
+    bottom: 10px;
   }
 }
 
@@ -633,11 +635,6 @@ body {
   }
 }
 
-/* Animation Utilities */
-[data-aos] {
-  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
 /* Button Styles */
 .btn {
   border-radius: 6px;
@@ -668,4 +665,9 @@ body {
 .btn-outline-primary:hover {
   background: var(--primary-color);
   border-color: var(--primary-color);
+}
+
+/* Animation Utilities */
+[data-aos] {
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
